@@ -24,6 +24,7 @@ class ExampleInstrumentedTest {
         assertEquals("com.itsmimao.kmm.coroutinetest", appContext.packageName)
     }
 
+    //test
     @Test
     fun testCoroutine() = runBlocking {
         assert(testSuspend())
