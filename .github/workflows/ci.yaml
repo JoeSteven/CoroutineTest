@@ -39,7 +39,7 @@ jobs:
         run: (while sleep 3; do echo "y"; done) | /Users/runner/Library/Android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses
 
       - name: Build tests
-        run: ./gradlew :common:assembleAndroidTest
+        run: ./gradlew :app:assembleAndroidTest
 
       - name: Run tests
         uses: reactivecircus/android-emulator-runner@v2.20.0
